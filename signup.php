@@ -53,7 +53,7 @@ function test_input($data) {
 }
 ?>
 
-<form > 
+<form method="post" action="signup_submit.php"> 
 <h2>REGISTRATION FORM</h2>
   Name: <input type="text" name="name">
   <span class="error">*Name  is required <?php echo $nameErr;?></span>

@@ -1,9 +1,12 @@
-
+<?php
+    require 'dbconfig.php';
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
         
-        <title>ecommerce project2</title>
+        <title>Projectworlds Store</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- latest compiled and minified CSS -->
@@ -26,7 +29,8 @@
                             
                             <div class="panel-body">
                                
-                                <form >           <div class="form-group">
+                                <form method="post" action="login_submit.php">
+                                    <div class="form-group">
                                     <h2>LOGIN HERE</h2>
                                         <input type="email" class="form-control" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                                     </div>
